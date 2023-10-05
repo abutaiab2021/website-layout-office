@@ -1,0 +1,44 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlexBox</title>
+    <style>
+        .container{
+            border: 3px solid green;
+            height: 400px;
+            /* overflow-y:scroll; */
+            display: flex;
+            /* justify-content: space-evenly; */
+            align-items: stretch;
+            /* flex-direction: column-reverse; */
+            /* flex-flow: column; */
+        }
+        .box{
+            font-size: 3ex;
+            font-weight: 700;
+            /* height: 100px; */
+            width: 100px;
+            padding: 10px;
+            text-align: center;
+            border: 3px solid red;
+       }
+       #box-2{
+        flex-grow: 3;
+       }
+    </style>
+</head>
+<body>
+    <h1>Explore FlexBox</h1>
+    <div class="container">
+        <div class="box">box-1</div>
+        <div id="box-2" class="box">box-2</div>
+        <div class="box">box-3</div>
+        <div class="box">box-4</div>
+        <div class="box">box-5</div>
+       
+    </div>
+</body>
+</html>
